@@ -7,16 +7,15 @@ function Users() {
       axios.get('https://jsonplaceholder.typicode.com/users')
       .then(function (response) {
          setUsers(response.data)
-         console.log(response)
       })
       .catch(function (error) {
-         console.log(error);
+         console.log(error)
       }) 
    }, []);
 
-  return (
-    <React.Fragment>
-      <h1>Users</h1>
+   return (
+      <React.Fragment>
+         <h1>Users</h1>
          <table>
             <th>Name</th>
             <th>Username</th>
@@ -44,13 +43,12 @@ function Users() {
                         <div>{user.company.bs}</div>
                         <div>{user.company.catchPhrase}</div>
                      </td>
-
                   </tr>
                )
             })}
          </table>
-    </React.Fragment>
-  );
+      </React.Fragment>
+   );
 }
 
 export default Users;
