@@ -2,4 +2,4 @@ This application utilizes React Hooks to display a simple UI design containing f
 
 Here is a screenshot of the rendered user interface:
 
-![Users Page Photo](/users-display.png)
+![Users Page Photo](/public/users-display.png)
